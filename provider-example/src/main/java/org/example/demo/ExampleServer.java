@@ -1,10 +1,8 @@
 package org.example.demo;
 
 import org.apache.dubbo.config.annotation.Service;
-import org.example.base.BusinessException;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -17,8 +15,28 @@ public class ExampleServer implements ExampleFace {
     public String hello(String id) {
         Optional<Example> optional = exampleDao.findById(id);
         if (optional.isEmpty()) {
-            throw new BusinessException("Data does not exist");
+            return null;
         }
         return "Hello" + optional.get().getAccountID();
+    }
+
+    @Override
+    public Example find(String s) {
+        return null;
+    }
+
+    @Override
+    public Example add(Example example) {
+        return null;
+    }
+
+    @Override
+    public void upload(Example example) {
+
+    }
+
+    @Override
+    public void delete(String s) {
+
     }
 }

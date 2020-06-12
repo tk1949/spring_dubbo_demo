@@ -26,6 +26,13 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>components-base</artifactId>
+            <version>${project.version}</version>
         </dependency>
 
     </dependencies>

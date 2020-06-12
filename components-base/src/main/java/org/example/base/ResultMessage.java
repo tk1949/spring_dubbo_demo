@@ -1,4 +1,4 @@
-package org.example.monitor;
+package org.example.base;
 
 import lombok.Getter;
 import lombok.Setter;
