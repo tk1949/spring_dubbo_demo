@@ -9,10 +9,10 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <module>components-base</module>
         <module>components-monitor</module>
         <module>api-example</module>
         <module>provider-example</module>
-        <module>components-base</module>
         <module>consumer-example</module>
     </modules>
 
