@@ -14,10 +14,11 @@ import javax.persistence.Id;
 public class Example {
 
     @Id
-    private String accountID;
+    private String exampleID;
 
     private String createID;
     private String updateID;
     private long createTime;
     private long updateTime;
+    private int status;
 }
